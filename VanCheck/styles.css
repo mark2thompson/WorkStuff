@@ -4,7 +4,19 @@ by: Mark Thompson
 */
 
 body{
-	background-color:#79786a;
+
+	height: 480px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#555449), to(#79786A));
+
+}
+#mainForm{
+	width: 345px;
+	background-color: #cfcfbf;
+	margin-top: -28px;
+	margin-left: -10px;
+	padding-left: 15px;
+	padding-top: 1px;
+	padding-bottom :5px;
 }
 #header{
 	margin-top: -5px;
