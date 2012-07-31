@@ -12,16 +12,30 @@ $(document).ready(function(){
 //if user name is stored in local storage then run this 
 console.log(localStorage.name);
 		if(localStorage.name != undefined){
-		formDiv.style.display = "none";
-		console.log("Hello");	
+		formDiv.style.display = "none";	
 		var value = localStorage.name;
 		var obj = JSON.parse(value);
+		//----------------------------------------------------------
 					for(var n in obj){
 				var makeSubLi = document.createElement('li');
 				displayName.appendChild(makeSubLi);
 				var optSubText = obj[n][0] + " is ready for VanCheck!";
-				makeSubLi.innerHTML = optSubText;	
-			}
+				makeSubLi.innerHTML = optSubText;
+				alert(optSubText);	
+			    }
+		//----------------------------------------------------------
+		var yellowVanCheck = "in";
+		var greenVanCheck = "in";
+		if (yellowVanCheck === "in"){
+			var makeButton = document.createElement('li');
+			yellowVan.appendChild(makeButton);
+			var vanAvailText = "Available";
+			makeButton.innerHTML = vanAvailText;
+			alert("this is a test");
+		}//yellowVanCheck
+		else{
+			alert("Van is checked out!");
+		}
 //********************************************************************************	
 		}else{
 //**********************************************************************************
