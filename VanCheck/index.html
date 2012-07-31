@@ -13,12 +13,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
 	<meta http-equiv="cleartype" content="on"/>
 	<link rel="stylesheet" href="styles.css" type="text/css" />
-	<link rel="apple-touch-icon" href="imeges/vanCheckIcon.png"/>
+	<link rel="apple-touch-icon" href="images/vanCheckIcon.png"/>
+	
 	<!-- link rel="apple-touch-startup-image" href="/startup.png"  if i decide on a startup image-->
 
 </head>
 
 <body>
-
-
+	<div id=main>
+		<h1 id="header"><img src="images/header.png" id="header"/><h1>
+	</div><!--main--!>
+	<ul id="displayName"></ul>
+	<div id="formDiv">
+		<h2 id="login">Please Login</h2>
+		<ul id="errors"></ul>
+		<form action="#" method="post" id="nameForm">
+			<ul>
+				<li><label for="firstName">Name:</label><input type="text" id="firstName"/></li>
+				<input type="submit" value="Login" id="submit"/>
+			</ul>
+		</form>
+	</div><!-form-!>
+	<div id="vanAvail">
+		<img src="images/seplinnoshaddow.png" id="lineSep"></img>
+		<p>Yellow Van</p>
+		<ul id=yellowVan>
+			<li></li>
+			
+		</ul>
+		<img src="images/seplinnoshaddow.png" id="lineSep"></img>
+		<p>Green Van</p>
+		<ul id=greenVan>
+			<li></li>
+		
+		</ul>
+		<img src="images/seplinnoshaddow.png" id="lineSep"></img>
+	<div><!-vanAvail-!>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
